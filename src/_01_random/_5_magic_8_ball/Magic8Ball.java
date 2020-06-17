@@ -6,10 +6,32 @@ package _01_random._5_magic_8_ball;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class Magic8Ball {
 
 	// 1. Make a main method that includes all the steps below
+public static void main(String[] args) {
+	//Random generator
+	Random rng = new Random();
 
+	// Provide a random number from 0 to 3, excluding 4.
+	int number = rng.nextInt(4);	
+	
+	if (number == 0 )
+		JOptionPane.showMessageDialog(null, "No");
+	
+	else if (number == 1 )
+	JOptionPane.showMessageDialog(null, "Yes");
+	
+	else if (number == 2 )
+		JOptionPane.showMessageDialog(null, "Maybe you should ask your helper?");
+	
+	else if (number == 3 )
+		JOptionPane.showMessageDialog(null, "probably");
+	
+	//if (randomNumber == 0){
+		//JOptionPane.showMessageDialog(null, "You look phenomenal");
 	// 2. Make a variable that will hold a random number and put a random number
 	//    into this variable using "new Random().nextInt(4)"
 
@@ -32,5 +54,6 @@ public class Magic8Ball {
 	// 8. If the random number is 3
 
 	// -- write your own answer
+}
 
 }
