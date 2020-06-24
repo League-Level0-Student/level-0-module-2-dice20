@@ -13,7 +13,7 @@ public class LOTTO {
 		
 		for (int i =0; i < 6; i++) {
 			int ticket = rng.nextInt(6);
-			JOptionPane.showMessageDialog(null,"your lottery tickets are:");
+			JOptionPane.showMessageDialog(null,"your lottery tickets are:"+ ticket );
 
 		}
 		

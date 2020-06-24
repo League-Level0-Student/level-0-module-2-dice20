@@ -10,11 +10,17 @@ void setup(){
 
      // Use the addScoop method below to add as many scoops of ice cream as you want
      // Choose a different flavor for each scoop
-
+  makeIceCreamCone();
      // Use the method provided to add some sprinkles to your ice cream
-
+  
      // Write code to add a cherry to the top of your ice cream. Hint: ellipse
 
+  addScoop("Vanilla");
+  addScoop("strawberry");
+  addScoop("chocolate");
+  addSprinkle(100);
+    fill(#EA0000);
+  ellipse(250,50,50,50);
 }
 
 /***********  These are methods for you to use. DON'T CHANGE CODE BELOW THIS LINE !!!   *****************/
@@ -46,7 +52,7 @@ void addScoop(String flavor){
          println("ERROR: We don't have the flavor "+ flavor); 
          return;
      }
-     ellipse(width/2,coneY - 50 - (SCOOPSIZE*scoops)/2,SCOOPSIZE,SCOOPSIZE);
+     ellipse(width/2,coneY - 48 - (SCOOPSIZE*scoops)/2,SCOOPSIZE,SCOOPSIZE);
      scoops++;
 }
 
