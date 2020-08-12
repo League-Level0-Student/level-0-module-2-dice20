@@ -14,9 +14,13 @@ public class RollerCoaster {
 			
 			int num = Integer.parseInt(hieght);
 		
+			if( num > 42 ) {
+				
+				JOptionPane.showMessageDialog(null, "Oaky you are tall enough to ride the rollercoaster!" );
+				
+			}
 		
-		
-		
+			else{JOptionPane.showMessageDialog(null, "You must be at least 43 inches tall to ride the roller coaster pal!");}
 		
 		}
 		// 2) Ask the user to enter their height in inches using JOptionPane and set it to the variable heightToRide
